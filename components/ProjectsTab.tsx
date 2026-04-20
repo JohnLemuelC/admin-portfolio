@@ -66,6 +66,30 @@ const serviceCategories = [
     ],
   },
   {
+    label: "Technical & IT Support",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2" y="3" width="20" height="14" rx="2" ry="2" /><line x1="8" y1="21" x2="16" y2="21" /><line x1="12" y1="17" x2="12" y2="21" />
+      </svg>
+    ),
+    services: [
+      {
+        title: "Cloud Contact-Center Support",
+        desc: "Frontline technical support for cloud contact-center software across phone, email, web, and voicemail.",
+        tags: ["Five9", "Cloud", "Technical"],
+        color: "cyan",
+        details: "Resolving technical queries related to installation, configuration, product functionality, and performance. Updating customer information and case interactions via Salesforce CRM. Valuable experience in escalation handling and customer optimization while coordinating with internal teams.",
+      },
+      {
+        title: "IT Certification Support",
+        desc: "Helping clients with questions about CPE and IT certifications via phone, chat, and email.",
+        tags: ["IT Cert", "Salesforce", "Multi-channel"],
+        color: "violet",
+        details: "Supporting clients with general questions about CPE and IT certifications. Documenting interactions and account information through Salesforce CRM. Expert in finding viable solutions — staying informed about goods and services offered to provide accurate guidance.",
+      },
+    ],
+  },
+  {
     label: "Customer & Guest Services",
     icon: (
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
@@ -131,6 +155,37 @@ const serviceCategories = [
         tags: ["Onboarding", "Setup", "Documentation"],
         color: "amber",
         details: "End-to-end onboarding support for new properties — ensuring all operational requirements, documentation, compliance checks, and platform listings are completed before going live.",
+      },
+    ],
+  },
+  {
+    label: "Lead Generation & Appointment Setting",
+    icon: (
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="3" y="4" width="18" height="18" rx="2" ry="2" /><line x1="16" y1="2" x2="16" y2="6" /><line x1="8" y1="2" x2="8" y2="6" /><line x1="3" y1="10" x2="21" y2="10" />
+      </svg>
+    ),
+    services: [
+      {
+        title: "Appointment Setting",
+        desc: "Scheduling appointments with potential clients and managing calendar flow.",
+        tags: ["Scheduling", "Calendar", "Outreach"],
+        color: "emerald",
+        details: "Scheduled appointments with potential clients, managed social media engagements, and handled email and chat inquiries. Updated client data in Excel sheets and made callbacks to monitor client feedback.",
+      },
+      {
+        title: "Lead Generation & Outreach",
+        desc: "Identifying and contacting qualified leads through targeted research and outreach.",
+        tags: ["Research", "Outreach", "Qualification"],
+        color: "cyan",
+        details: "Successfully identified and contacted clients who met specific criteria through thorough research and outreach strategies. Data-driven approach to building qualified pipelines.",
+      },
+      {
+        title: "Collections & Account Management",
+        desc: "Managing debtor accounts, payment reminders, and installment coordination via CRM.",
+        tags: ["CRM", "Collections", "Accounts"],
+        color: "rose",
+        details: "Maintained and examined debtor lists through CRM to identify payment due dates. Reminded debtors through proficient phone communication. Coordinated with field liaisons for collection engagements and provided appropriate installment options for efficient repayment.",
       },
     ],
   },

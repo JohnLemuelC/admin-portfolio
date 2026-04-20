@@ -3,9 +3,9 @@
 const BASE = process.env.NEXT_PUBLIC_BASE_PATH || "";
 
 const stats = [
-  { label: "Years Experience", value: "4+", tag: "Since 2022", color: "var(--accent)" },
-  { label: "Properties Managed", value: "Multi", tag: "UK, US, Airbnb", color: "var(--cyan)" },
-  { label: "Superhost Status", value: "Airbnb", tag: "In 2 Months", color: "var(--emerald)" },
+  { label: "Years Experience", value: "7+", tag: "Since 2018", color: "var(--accent)" },
+  { label: "Industries Supported", value: "Multi", tag: "Real Estate, Tech, BPO", color: "var(--cyan)" },
+  { label: "CRM Expertise", value: "Salesforce", tag: "Advanced", color: "var(--emerald)" },
   { label: "QA Score", value: "100%", tag: "Peak Support", color: "var(--amber)" },
 ];
 
@@ -48,14 +48,14 @@ export default function OverviewTab({ onNavigate }: { onNavigate: (id: string) =
       <div className="page-header">
         <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", marginBottom: "0.5rem" }}>
           <span style={{ fontSize: "0.72rem", fontWeight: 600, color: "var(--accent)", textTransform: "uppercase" as const, letterSpacing: "0.1em" }}>
-            Virtual Assistant & Admin Support
+            Admin & Customer Support
           </span>
         </div>
         <h1 className="page-title">
-          Organized, Reliable <span style={{ color: "var(--accent)" }}>Admin Support</span> for Busy Businesses
+          Reliable <span style={{ color: "var(--accent)" }}>Admin & Customer Support</span> for Growing Businesses
         </h1>
         <p className="page-subtitle">
-          Experienced Virtual Assistant specializing in property management, short-term rentals, customer service, and admin operations. Helping property managers, clients, and business owners stay organized and responsive.
+          Experienced in property management, customer service, technical support, appointment setting, and admin operations. Supporting teams across real estate, tech, and service businesses with organized, customer-focused work.
         </p>
       </div>
 
@@ -75,13 +75,13 @@ export default function OverviewTab({ onNavigate }: { onNavigate: (id: string) =
         <div className="about-text" style={{ gridColumn: "1 / -1" }}>
           <h3>About Me</h3>
           <p>
-            Motivated Virtual Assistant with years of varied experience overseeing real estate properties, managing short-term rental properties, and handling customer-related services. Committed to using organizational and communication skills to support property managers, clients, and business owners.
+            Motivated Admin & Customer Support professional with years of experience across property management, technical support, customer service, appointment setting, and administrative operations. Strong communication, empathy, and problem-solving skills — paired with excellent organization and multitasking abilities.
           </p>
           <p>
-            Beyond property management, I bring experience in customer service, case management, digital marketing, and transaction coordination — having worked with businesses across the US, UK, and the Philippines. Bachelor of Arts in English from Isabela State University.
+            Customer-focused, adaptable to new systems, and able to prioritize effectively in fast-paced settings. Experience spans short-term rental management, cloud contact-center support (Five9), lead generation, collections, and customer service for IT certification clients. Demonstrated accountability, professionalism, and teamwork to deliver seamless service.
           </p>
           <div className="about-tags">
-            {["Property Management", "Airbnb / OTAs", "CRM", "Customer Service", "Transaction Coordination", "Admin Support"].map((t) => (
+            {["Customer Support", "Property Management", "Technical Support", "Appointment Setting", "Salesforce CRM", "Data Entry", "Lead Generation", "Admin Operations"].map((t) => (
               <span key={t} className="card-tag">{t}</span>
             ))}
           </div>

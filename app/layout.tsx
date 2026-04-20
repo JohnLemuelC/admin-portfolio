@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Portfolio | Virtual Assistant & Admin Support",
+  title: "Portfolio | Admin & Customer Support",
   description:
-    "Experienced Virtual Assistant specializing in property management, short-term rentals, customer service, and administrative support. 4+ years supporting real estate, hospitality, and e-commerce businesses.",
-  keywords: ["virtual assistant", "admin support", "property management", "Airbnb management", "short-term rentals", "CRM", "customer service", "transaction coordinator"],
+    "Experienced Admin & Customer Support specialist. Property management, customer service, technical support, appointment setting, and administrative operations across real estate, tech, and service businesses.",
+  keywords: ["admin support", "customer support", "technical support", "property management", "appointment setting", "lead generation", "CRM", "Salesforce", "data entry"],
   openGraph: {
-    title: "Portfolio | Virtual Assistant & Admin Support",
-    description: "Supporting property managers, clients, and business owners with organized, reliable admin work.",
+    title: "Portfolio | Admin & Customer Support",
+    description: "Organized, customer-focused admin and customer support across real estate, tech, and service businesses.",
     type: "website",
   },
 };

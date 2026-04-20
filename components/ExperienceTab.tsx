@@ -93,6 +93,75 @@ const experiences = [
       "Responding to comments and messages on the company's Facebook page",
     ],
   },
+  {
+    role: "Technical Support Representative",
+    company: "Five9 Inc.",
+    period: "2023 - 2025 (2 Years)",
+    status: "prev",
+    highlights: [
+      "Updated customer information and case interactions via Salesforce CRM",
+      "Valuable experience in escalation handling and customer optimization while coordinating with the internal team",
+      "Acted as frontline support for customers using cloud contact-center software",
+      "Handled issues across channels — phone, email, web, voicemail — and resolved technical queries related to installation, configuration, product functionality, and performance",
+    ],
+  },
+  {
+    role: "Part-Time Property Coordinator",
+    company: "SDI Living",
+    period: "2023 - 2024 (1 Year)",
+    status: "prev",
+    highlights: [
+      "Handled data entry and maintaining accurate records in property systems",
+      "Supported property management through listing updates, guest reviews, and inventory coordination",
+      "Connected property owners and cleaning companies for service scheduling",
+      "Delivered exceptional guest experiences by promptly addressing inquiries, resolving issues, and managing communications across booking platforms",
+    ],
+  },
+  {
+    role: "Appointment Setter",
+    company: "Sunder Solar",
+    period: "2023 - 2024 (1 Year)",
+    status: "prev",
+    highlights: [
+      "Scheduled appointments with potential clients",
+      "Managed social media engagements and handled emails and chat inquiries",
+      "Updated client data in Excel sheets and made callbacks to monitor client feedback",
+      "Successfully identified and contacted clients who met specific criteria through thorough research and outreach strategies",
+    ],
+  },
+  {
+    role: "Customer Service Representative",
+    company: "Support Ninja Inc.",
+    period: "2021 - 2023 (2 Years)",
+    status: "prev",
+    highlights: [
+      "Helped clients with general questions about their CPE and IT Certifications",
+      "Tracked client accounts by documenting interactions and account information through phone, chat, and email using Salesforce CRM",
+      "Expert in finding viable solutions for consumers — staying informed about goods and services offered",
+    ],
+  },
+  {
+    role: "Account Specialist",
+    company: "SP Madrid Associates",
+    period: "2019 - 2021 (2 Years)",
+    status: "prev",
+    highlights: [
+      "Maintained and examined a company's list of debtors through CRM to figure out when payments are due",
+      "Reminded debtors as needed through proficient phone communication",
+      "Coordinated with field liaison to ensure collection engagements",
+      "Provided debtors with appropriate installment options for more efficient repayment",
+    ],
+  },
+  {
+    role: "Shop Manager",
+    company: "Uncle Fred's Motorcycle Shop",
+    period: "2018 - 2019 (1 Year)",
+    status: "prev",
+    highlights: [
+      "Managed government tax filing, maintained inventory, and tracked logistics to ensure smooth operations and compliance",
+      "Managed and responded to customer inquiries about products they purchased",
+    ],
+  },
 ];
 
 const achievements = [
@@ -119,11 +188,18 @@ const achievements = [
   },
 ];
 
-const education = {
-  degree: "Bachelor of Arts in English",
-  school: "Isabela State University",
-  year: "2020",
-};
+const education = [
+  {
+    degree: "Bachelor of Arts in English",
+    school: "Isabela State University",
+    year: "2020",
+  },
+  {
+    degree: "Bachelor of Science in Primary Education (General Education)",
+    school: "Pangasinan State University",
+    year: "",
+  },
+];
 
 export default function ExperienceTab() {
   return (
@@ -201,14 +277,20 @@ export default function ExperienceTab() {
           </svg>
           Education
         </div>
-        <div className="list-item" style={{ alignItems: "flex-start", padding: "1rem" }}>
-          <div className="list-content">
-            <div className="list-title">{education.degree}</div>
-            <div className="list-subtitle">{education.school}</div>
-          </div>
-          <div>
-            <span className="list-meta">{education.year}</span>
-          </div>
+        <div style={{ display: "grid", gridTemplateColumns: "1fr", gap: "0.5rem" }}>
+          {education.map((ed, i) => (
+            <div key={i} className="list-item" style={{ alignItems: "flex-start", padding: "1rem" }}>
+              <div className="list-content">
+                <div className="list-title">{ed.degree}</div>
+                <div className="list-subtitle">{ed.school}</div>
+              </div>
+              {ed.year && (
+                <div>
+                  <span className="list-meta">{ed.year}</span>
+                </div>
+              )}
+            </div>
+          ))}
         </div>
       </div>
     </>

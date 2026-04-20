@@ -43,7 +43,8 @@ const toolGroups = [
   {
     label: "CRM & Customer Service",
     tools: [
-      { name: "Salesforce", img: `${BASE}/images/tools/tool-salesforce.png` },
+      { name: "Salesforce CRM", img: `${BASE}/images/tools/tool-salesforce.png` },
+      { name: "Five9 Cloud Contact", img: `${BASE}/images/tools/tool-five9.png` },
       { name: "Respond.io", img: `${BASE}/images/tools/tool-respondio.png` },
     ],
   },
@@ -59,18 +60,22 @@ const toolGroups = [
 ];
 
 const coreSkills = [
-  "Email and phone communications",
-  "Social media management",
-  "Transaction coordination",
+  "Customer support (call, chat, email)",
+  "Technical support & troubleshooting",
+  "Escalation handling & coordination",
+  "Appointment setting & scheduling",
+  "Lead generation & outreach",
+  "Calendar & data management",
   "Data entry, processing, and documentation",
-  "CRM management",
-  "Task management",
-  "Customer service and appointment setting",
+  "Salesforce CRM management",
   "Property listing optimization",
   "Guest communication and complaint resolution",
-  "Maintenance coordination",
+  "Social media management",
+  "Transaction coordination",
+  "Email and phone communications",
   "Compliance monitoring and documentation",
   "Digital filing and records management",
+  "Collections & account management",
 ];
 
 export default function ToolsTab() {
