@@ -3,23 +3,23 @@
 @tailwind utilities;
 
 :root {
-  --bg: #0a0e1a;
-  --surface: #111827;
-  --surface-2: #1a2236;
-  --surface-3: #1e293b;
-  --text: #f1f5f9;
-  --text-muted: #94a3b8;
-  --text-subtle: #475569;
+  --bg: #f8fafc;
+  --surface: #ffffff;
+  --surface-2: #f1f5f9;
+  --surface-3: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --text-subtle: #94a3b8;
   --accent: #3b82f6;
   --accent-hover: #2563eb;
-  --accent-glow: rgba(59, 130, 246, 0.15);
+  --accent-glow: rgba(59, 130, 246, 0.12);
   --cyan: #06b6d4;
   --emerald: #10b981;
   --amber: #f59e0b;
   --rose: #f43f5e;
   --violet: #8b5cf6;
-  --border: rgba(148, 163, 184, 0.08);
-  --border-hover: rgba(148, 163, 184, 0.2);
+  --border: rgba(148, 163, 184, 0.25);
+  --border-hover: rgba(148, 163, 184, 0.5);
 }
 
 * {
@@ -60,7 +60,7 @@ img { display: block; max-width: 100%; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(10, 14, 26, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(20px);
   border-bottom: 1px solid var(--border);
   padding: 0 1.5rem;
